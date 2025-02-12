@@ -78,10 +78,10 @@ docker logs -f swag
 
 Services - Unbound DNS - Host Overrides - Add
 
-Host: subdomain
-Domain: domain name
-Type: A
-IP address: 192.168.x.x
+- Host: subdomain
+- Domain: domain name
+- Type: A
+- IP address: 192.168.x.x
 
 Save - Restart service
 
@@ -109,13 +109,13 @@ Save
 
 Some default ports:
 
-qbittorrent - 8082
-sonarr - 8989
-radarr - 7878
-portainer - 9443
-plex - 32400
-prowlarr - 9696
-overseerr - 5055
+- qbittorrent - 8082
+- sonarr - 8989
+- radarr - 7878
+- portainer - 9443
+- plex - 32400
+- prowlarr - 9696
+- overseerr - 5055
 
 
 Example: 
