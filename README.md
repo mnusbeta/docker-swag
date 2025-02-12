@@ -113,7 +113,7 @@ qbittorrent - 8082
 sonarr - 8989
 radarr - 7878
 portainer - 9443
-plex - 
+plex - 32400
 prowlarr - 9696
 overseerr - 5055
 
@@ -129,12 +129,12 @@ server {
     listen 443 ssl;
     listen [::]:443 ssl;
 
-    server_name qbittorrent.your.domain;
+    server_name radarr.your.domain;
 
     include /config/nginx/ssl.conf;
 
     location / {
-        proxy_pass http://192.168.x.x:8082/;
+        proxy_pass http://192.168.x.x:7878/;
         include /config/nginx/proxy.conf;
     }
 }
